@@ -3,7 +3,7 @@ spawn(function()
  while wait() do
   pcall(function()
      wait(getgenv().time)
-       game:GetService("TeleportService"):Teleport()
+       game:GetService("TeleportService"):Teleport(18901165922)
      end)
    end
  end)
