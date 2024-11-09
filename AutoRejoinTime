@@ -1,0 +1,9 @@
+getgenv().time = 2700
+spawn(function()
+ while wait() do
+  pcall(function()
+     wait(getgenv().time)
+       game:GetService("TeleportService"):Teleport()
+     end)
+   end
+ end)
