@@ -1,0 +1,3495 @@
+--[[
+
+Scripts Made by ._.kinzin 👻
+UI Made by deusferrinho 👑
+(All dc names)
+
+]]
+
+-- Instances: 190 | Scripts: 45 | Modules: 1 | Tags: 0
+local G2L = {};
+
+-- StarterGui.StellySpy
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[StellySpy]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
+
+
+-- StarterGui.StellySpy.Frame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2"]["Size"] = UDim2.new(0, 425, 0, 250);
+G2L["2"]["Position"] = UDim2.new(0.28571, 27, 0.32491, -11);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.StellySpy.Frame.TopBar
+G2L["3"] = Instance.new("Frame", G2L["2"]);
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(39, 37, 40);
+G2L["3"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["3"]["Size"] = UDim2.new(1, 0, 0.08, 0);
+G2L["3"]["Position"] = UDim2.new(0.5, 0, 0, 0);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Name"] = [[TopBar]];
+
+
+-- StarterGui.StellySpy.Frame.TopBar.X
+G2L["4"] = Instance.new("ImageButton", G2L["3"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(38, 36, 39);
+G2L["4"]["AnchorPoint"] = Vector2.new(1, 0.5);
+G2L["4"]["Image"] = [[rbxassetid://10002373478]];
+G2L["4"]["Size"] = UDim2.new(0.04706, 0, 1, 0);
+G2L["4"]["Name"] = [[X]];
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Position"] = UDim2.new(1, 0, 0.5, 0);
+
+
+-- StarterGui.StellySpy.Frame.TopBar.X.LocalScript
+G2L["5"] = Instance.new("LocalScript", G2L["4"]);
+
+
+
+-- StarterGui.StellySpy.Frame.TopBar.Name
+G2L["6"] = Instance.new("TextLabel", G2L["3"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextScaled"] = true;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["TextSize"] = 12;
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["Size"] = UDim2.new(0.20252, 0, 1, 0);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["Text"] = [[StellySpy]];
+G2L["6"]["AutomaticSize"] = Enum.AutomaticSize.X;
+G2L["6"]["Name"] = [[Name]];
+G2L["6"]["Position"] = UDim2.new(-0.00227, 0, 0, 0);
+
+
+-- StarterGui.StellySpy.Frame.TopBar.Name.UITextSizeConstraint
+G2L["7"] = Instance.new("UITextSizeConstraint", G2L["6"]);
+G2L["7"]["MaxTextSize"] = 15;
+G2L["7"]["MinTextSize"] = 15;
+
+
+-- StarterGui.StellySpy.Frame.TopBar.Name.LocalScript
+G2L["8"] = Instance.new("LocalScript", G2L["6"]);
+
+
+
+-- StarterGui.StellySpy.Frame.TopBar.V3
+G2L["9"] = Instance.new("TextLabel", G2L["3"]);
+G2L["9"]["TextWrapped"] = true;
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["TextScaled"] = true;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["TextSize"] = 12;
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["BackgroundTransparency"] = 1;
+G2L["9"]["Size"] = UDim2.new(0.06059, 0, 1, 0);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["Text"] = [[V3]];
+G2L["9"]["AutomaticSize"] = Enum.AutomaticSize.X;
+G2L["9"]["Name"] = [[V3]];
+G2L["9"]["Position"] = UDim2.new(0.16706, 0, 0, 0);
+
+
+-- StarterGui.StellySpy.Frame.TopBar.V3.UITextSizeConstraint
+G2L["a"] = Instance.new("UITextSizeConstraint", G2L["9"]);
+G2L["a"]["MaxTextSize"] = 15;
+G2L["a"]["MinTextSize"] = 15;
+
+
+-- StarterGui.StellySpy.Frame.TopBar.V3.LocalScript
+G2L["b"] = Instance.new("LocalScript", G2L["9"]);
+
+
+
+-- StarterGui.StellySpy.Frame.TopBar.V3.mobile
+G2L["c"] = Instance.new("LocalScript", G2L["9"]);
+G2L["c"]["Name"] = [[mobile]];
+
+
+-- StarterGui.StellySpy.Frame.CodeSample
+G2L["d"] = Instance.new("TextBox", G2L["2"]);
+G2L["d"]["Interactable"] = false;
+G2L["d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["d"]["TextWrapped"] = true;
+G2L["d"]["TextSize"] = 16;
+G2L["d"]["Name"] = [[CodeSample]];
+G2L["d"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["d"]["TextScaled"] = true;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(19, 19, 28);
+G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["d"]["MultiLine"] = true;
+G2L["d"]["ClearTextOnFocus"] = false;
+G2L["d"]["Size"] = UDim2.new(0.70588, 0, 0.58, 0);
+G2L["d"]["Position"] = UDim2.new(0.29412, 0, 0.08, 0);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Text"] = [[]];
+
+
+-- StarterGui.StellySpy.Frame.CodeSample.Color
+G2L["e"] = Instance.new("LocalScript", G2L["d"]);
+G2L["e"]["Name"] = [[Color]];
+
+
+-- StarterGui.StellySpy.Frame.CodeSample.UITextSizeConstraint
+G2L["f"] = Instance.new("UITextSizeConstraint", G2L["d"]);
+G2L["f"]["MaxTextSize"] = 16;
+G2L["f"]["MinTextSize"] = 15;
+
+
+-- StarterGui.StellySpy.Frame.CodeSample.Anim
+G2L["10"] = Instance.new("LocalScript", G2L["d"]);
+G2L["10"]["Name"] = [[Anim]];
+
+
+-- StarterGui.StellySpy.Frame.Drag
+G2L["11"] = Instance.new("LocalScript", G2L["2"]);
+G2L["11"]["Name"] = [[Drag]];
+
+
+-- StarterGui.StellySpy.Frame.Main
+G2L["12"] = Instance.new("LocalScript", G2L["2"]);
+G2L["12"]["Name"] = [[Main]];
+
+
+-- StarterGui.StellySpy.Frame.resizer
+G2L["13"] = Instance.new("Frame", G2L["2"]);
+G2L["13"]["SizeConstraint"] = Enum.SizeConstraint.RelativeXX;
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["ClipsDescendants"] = true;
+G2L["13"]["Size"] = UDim2.new(0.07059, 0, 24.064, 0);
+G2L["13"]["Position"] = UDim2.new(0.92941, 0, 0.872, 0);
+G2L["13"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["13"]["Name"] = [[resizer]];
+G2L["13"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.StellySpy.Frame.resizer.dragger
+G2L["14"] = Instance.new("ImageButton", G2L["13"]);
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 86, 0);
+G2L["14"]["ZIndex"] = 2;
+G2L["14"]["Size"] = UDim2.new(1.9, 0, 0.04338, 0);
+G2L["14"]["BackgroundTransparency"] = 1;
+G2L["14"]["Name"] = [[dragger]];
+G2L["14"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+
+
+-- StarterGui.StellySpy.Frame.resizer.dragger.UICorner
+G2L["15"] = Instance.new("UICorner", G2L["14"]);
+G2L["15"]["CornerRadius"] = UDim.new(0.5, 0);
+
+
+-- StarterGui.StellySpy.Frame.reziserMain
+G2L["16"] = Instance.new("LocalScript", G2L["2"]);
+G2L["16"]["Name"] = [[reziserMain]];
+
+
+-- StarterGui.StellySpy.Frame.resizerModule
+G2L["17"] = Instance.new("ModuleScript", G2L["2"]);
+G2L["17"]["Name"] = [[resizerModule]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes
+G2L["18"] = Instance.new("ScrollingFrame", G2L["2"]);
+G2L["18"]["Active"] = true;
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["CanvasSize"] = UDim2.new(9999, 9999, 9999, 9999);
+G2L["18"]["ElasticBehavior"] = Enum.ElasticBehavior.Always;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["18"]["Name"] = [[Remotes]];
+G2L["18"]["ScrollBarImageTransparency"] = 1;
+G2L["18"]["HorizontalScrollBarInset"] = Enum.ScrollBarInset.Always;
+G2L["18"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["18"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["18"]["Size"] = UDim2.new(0.29412, 0, 0.916, 0);
+G2L["18"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Position"] = UDim2.new(0, 0, 0.538, 0);
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["ScrollBarThickness"] = 0;
+G2L["18"]["LayoutOrder"] = 1;
+
+
+-- StarterGui.StellySpy.Frame.Remotes.UIPadding
+G2L["19"] = Instance.new("UIPadding", G2L["18"]);
+G2L["19"]["PaddingTop"] = UDim.new(0, 10);
+G2L["19"]["PaddingLeft"] = UDim.new(0, 10);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Infoupdts
+G2L["1a"] = Instance.new("TextButton", G2L["18"]);
+G2L["1a"]["TextWrapped"] = true;
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["TextSize"] = 14;
+G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["TextScaled"] = true;
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["1a"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["1a"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["1a"]["BackgroundTransparency"] = 0.8;
+G2L["1a"]["Name"] = [[Infoupdts]];
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["1a"]["Text"] = [[Info & updts]];
+G2L["1a"]["Position"] = UDim2.new(0.45248, 0, 0.32273, 0);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Infoupdts.border
+G2L["1b"] = Instance.new("Frame", G2L["1a"]);
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["1b"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["Name"] = [[border]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Infoupdts.UITextSizeConstraint
+G2L["1c"] = Instance.new("UITextSizeConstraint", G2L["1a"]);
+G2L["1c"]["MaxTextSize"] = 17;
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Infoupdts.Animate
+G2L["1d"] = Instance.new("LocalScript", G2L["1a"]);
+G2L["1d"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Infoupdts.UIStroke
+G2L["1e"] = Instance.new("UIStroke", G2L["1a"]);
+G2L["1e"]["Transparency"] = 0.5;
+G2L["1e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["1e"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Infoupdts.Function
+G2L["1f"] = Instance.new("LocalScript", G2L["1a"]);
+G2L["1f"]["Name"] = [[Function]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote1
+G2L["20"] = Instance.new("TextButton", G2L["18"]);
+G2L["20"]["TextWrapped"] = true;
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["TextSize"] = 14;
+G2L["20"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["TextScaled"] = true;
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["20"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["20"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["20"]["BackgroundTransparency"] = 0.8;
+G2L["20"]["Name"] = [[Remote1]];
+G2L["20"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["20"]["Text"] = [[RemoteName]];
+G2L["20"]["Visible"] = false;
+G2L["20"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote1.border
+G2L["21"] = Instance.new("Frame", G2L["20"]);
+G2L["21"]["BorderSizePixel"] = 0;
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["21"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["Name"] = [[border]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote1.UITextSizeConstraint
+G2L["22"] = Instance.new("UITextSizeConstraint", G2L["20"]);
+G2L["22"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote1.Animate
+G2L["23"] = Instance.new("LocalScript", G2L["20"]);
+G2L["23"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote1.UIStroke
+G2L["24"] = Instance.new("UIStroke", G2L["20"]);
+G2L["24"]["Transparency"] = 0.5;
+G2L["24"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["24"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote2
+G2L["25"] = Instance.new("TextButton", G2L["18"]);
+G2L["25"]["TextWrapped"] = true;
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["TextSize"] = 14;
+G2L["25"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25"]["TextScaled"] = true;
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["25"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["25"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["25"]["BackgroundTransparency"] = 0.8;
+G2L["25"]["Name"] = [[Remote2]];
+G2L["25"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["25"]["Text"] = [[RemoteName]];
+G2L["25"]["Visible"] = false;
+G2L["25"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote2.border
+G2L["26"] = Instance.new("Frame", G2L["25"]);
+G2L["26"]["BorderSizePixel"] = 0;
+G2L["26"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["26"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26"]["Name"] = [[border]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote2.UITextSizeConstraint
+G2L["27"] = Instance.new("UITextSizeConstraint", G2L["25"]);
+G2L["27"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote2.Animate
+G2L["28"] = Instance.new("LocalScript", G2L["25"]);
+G2L["28"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote2.UIStroke
+G2L["29"] = Instance.new("UIStroke", G2L["25"]);
+G2L["29"]["Transparency"] = 0.5;
+G2L["29"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["29"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote3
+G2L["2a"] = Instance.new("TextButton", G2L["18"]);
+G2L["2a"]["TextWrapped"] = true;
+G2L["2a"]["BorderSizePixel"] = 0;
+G2L["2a"]["TextSize"] = 14;
+G2L["2a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a"]["TextScaled"] = true;
+G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["2a"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2a"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["2a"]["BackgroundTransparency"] = 0.8;
+G2L["2a"]["Name"] = [[Remote3]];
+G2L["2a"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["2a"]["Text"] = [[RemoteName]];
+G2L["2a"]["Visible"] = false;
+G2L["2a"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote3.border
+G2L["2b"] = Instance.new("Frame", G2L["2a"]);
+G2L["2b"]["BorderSizePixel"] = 0;
+G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["2b"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["Name"] = [[border]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote3.UITextSizeConstraint
+G2L["2c"] = Instance.new("UITextSizeConstraint", G2L["2a"]);
+G2L["2c"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote3.Animate
+G2L["2d"] = Instance.new("LocalScript", G2L["2a"]);
+G2L["2d"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote3.UIStroke
+G2L["2e"] = Instance.new("UIStroke", G2L["2a"]);
+G2L["2e"]["Transparency"] = 0.5;
+G2L["2e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["2e"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote4
+G2L["2f"] = Instance.new("TextButton", G2L["18"]);
+G2L["2f"]["TextWrapped"] = true;
+G2L["2f"]["BorderSizePixel"] = 0;
+G2L["2f"]["TextSize"] = 14;
+G2L["2f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f"]["TextScaled"] = true;
+G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["2f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["2f"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2f"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["2f"]["BackgroundTransparency"] = 0.8;
+G2L["2f"]["Name"] = [[Remote4]];
+G2L["2f"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["2f"]["Text"] = [[RemoteName]];
+G2L["2f"]["Visible"] = false;
+G2L["2f"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote4.border
+G2L["30"] = Instance.new("Frame", G2L["2f"]);
+G2L["30"]["BorderSizePixel"] = 0;
+G2L["30"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["30"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["Name"] = [[border]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote4.UITextSizeConstraint
+G2L["31"] = Instance.new("UITextSizeConstraint", G2L["2f"]);
+G2L["31"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote4.Animate
+G2L["32"] = Instance.new("LocalScript", G2L["2f"]);
+G2L["32"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote4.UIStroke
+G2L["33"] = Instance.new("UIStroke", G2L["2f"]);
+G2L["33"]["Transparency"] = 0.5;
+G2L["33"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["33"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote5
+G2L["34"] = Instance.new("TextButton", G2L["18"]);
+G2L["34"]["TextWrapped"] = true;
+G2L["34"]["BorderSizePixel"] = 0;
+G2L["34"]["TextSize"] = 14;
+G2L["34"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["TextScaled"] = true;
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["34"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["34"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["34"]["BackgroundTransparency"] = 0.8;
+G2L["34"]["Name"] = [[Remote5]];
+G2L["34"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["34"]["Text"] = [[RemoteName]];
+G2L["34"]["Visible"] = false;
+G2L["34"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote5.border
+G2L["35"] = Instance.new("Frame", G2L["34"]);
+G2L["35"]["BorderSizePixel"] = 0;
+G2L["35"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["35"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["35"]["Name"] = [[border]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote5.UITextSizeConstraint
+G2L["36"] = Instance.new("UITextSizeConstraint", G2L["34"]);
+G2L["36"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote5.Animate
+G2L["37"] = Instance.new("LocalScript", G2L["34"]);
+G2L["37"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote5.UIStroke
+G2L["38"] = Instance.new("UIStroke", G2L["34"]);
+G2L["38"]["Transparency"] = 0.5;
+G2L["38"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["38"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote6
+G2L["39"] = Instance.new("TextButton", G2L["18"]);
+G2L["39"]["TextWrapped"] = true;
+G2L["39"]["BorderSizePixel"] = 0;
+G2L["39"]["TextSize"] = 14;
+G2L["39"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["39"]["TextScaled"] = true;
+G2L["39"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["39"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["39"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["39"]["BackgroundTransparency"] = 0.8;
+G2L["39"]["Name"] = [[Remote6]];
+G2L["39"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["39"]["Text"] = [[RemoteName]];
+G2L["39"]["Visible"] = false;
+G2L["39"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote6.border
+G2L["3a"] = Instance.new("Frame", G2L["39"]);
+G2L["3a"]["BorderSizePixel"] = 0;
+G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["3a"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a"]["Name"] = [[border]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote6.UITextSizeConstraint
+G2L["3b"] = Instance.new("UITextSizeConstraint", G2L["39"]);
+G2L["3b"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote6.Animate
+G2L["3c"] = Instance.new("LocalScript", G2L["39"]);
+G2L["3c"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote6.UIStroke
+G2L["3d"] = Instance.new("UIStroke", G2L["39"]);
+G2L["3d"]["Transparency"] = 0.5;
+G2L["3d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["3d"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote8
+G2L["3e"] = Instance.new("TextButton", G2L["18"]);
+G2L["3e"]["TextWrapped"] = true;
+G2L["3e"]["BorderSizePixel"] = 0;
+G2L["3e"]["TextSize"] = 14;
+G2L["3e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3e"]["TextScaled"] = true;
+G2L["3e"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["3e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["3e"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["3e"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["3e"]["BackgroundTransparency"] = 0.8;
+G2L["3e"]["Name"] = [[Remote8]];
+G2L["3e"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["3e"]["Text"] = [[RemoteName]];
+G2L["3e"]["Visible"] = false;
+G2L["3e"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote8.border
+G2L["3f"] = Instance.new("Frame", G2L["3e"]);
+G2L["3f"]["BorderSizePixel"] = 0;
+G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["3f"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3f"]["Name"] = [[border]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote8.UITextSizeConstraint
+G2L["40"] = Instance.new("UITextSizeConstraint", G2L["3e"]);
+G2L["40"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote8.Animate
+G2L["41"] = Instance.new("LocalScript", G2L["3e"]);
+G2L["41"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote8.UIStroke
+G2L["42"] = Instance.new("UIStroke", G2L["3e"]);
+G2L["42"]["Transparency"] = 0.5;
+G2L["42"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["42"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote9
+G2L["43"] = Instance.new("TextButton", G2L["18"]);
+G2L["43"]["TextWrapped"] = true;
+G2L["43"]["BorderSizePixel"] = 0;
+G2L["43"]["TextSize"] = 14;
+G2L["43"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["43"]["TextScaled"] = true;
+G2L["43"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["43"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["43"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["43"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["43"]["BackgroundTransparency"] = 0.8;
+G2L["43"]["Name"] = [[Remote9]];
+G2L["43"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["43"]["Text"] = [[RemoteName]];
+G2L["43"]["Visible"] = false;
+G2L["43"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote9.border
+G2L["44"] = Instance.new("Frame", G2L["43"]);
+G2L["44"]["BorderSizePixel"] = 0;
+G2L["44"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["44"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["44"]["Name"] = [[border]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote9.UITextSizeConstraint
+G2L["45"] = Instance.new("UITextSizeConstraint", G2L["43"]);
+G2L["45"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote9.Animate
+G2L["46"] = Instance.new("LocalScript", G2L["43"]);
+G2L["46"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote9.UIStroke
+G2L["47"] = Instance.new("UIStroke", G2L["43"]);
+G2L["47"]["Transparency"] = 0.5;
+G2L["47"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["47"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote10
+G2L["48"] = Instance.new("TextButton", G2L["18"]);
+G2L["48"]["TextWrapped"] = true;
+G2L["48"]["BorderSizePixel"] = 0;
+G2L["48"]["TextSize"] = 14;
+G2L["48"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["48"]["TextScaled"] = true;
+G2L["48"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["48"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["48"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["48"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["48"]["BackgroundTransparency"] = 0.8;
+G2L["48"]["Name"] = [[Remote10]];
+G2L["48"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["48"]["Text"] = [[RemoteName]];
+G2L["48"]["Visible"] = false;
+G2L["48"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote10.border
+G2L["49"] = Instance.new("Frame", G2L["48"]);
+G2L["49"]["BorderSizePixel"] = 0;
+G2L["49"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["49"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["49"]["Name"] = [[border]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote10.UITextSizeConstraint
+G2L["4a"] = Instance.new("UITextSizeConstraint", G2L["48"]);
+G2L["4a"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote10.Animate
+G2L["4b"] = Instance.new("LocalScript", G2L["48"]);
+G2L["4b"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote10.UIStroke
+G2L["4c"] = Instance.new("UIStroke", G2L["48"]);
+G2L["4c"]["Transparency"] = 0.5;
+G2L["4c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["4c"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.RemoteExample
+G2L["4d"] = Instance.new("TextButton", G2L["18"]);
+G2L["4d"]["TextWrapped"] = true;
+G2L["4d"]["BorderSizePixel"] = 0;
+G2L["4d"]["TextSize"] = 14;
+G2L["4d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4d"]["TextScaled"] = true;
+G2L["4d"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["4d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["4d"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["4d"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["4d"]["BackgroundTransparency"] = 0.8;
+G2L["4d"]["Name"] = [[RemoteExample]];
+G2L["4d"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["4d"]["Text"] = [[RemoteName]];
+G2L["4d"]["Visible"] = false;
+G2L["4d"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.RemoteExample.border
+G2L["4e"] = Instance.new("Frame", G2L["4d"]);
+G2L["4e"]["BorderSizePixel"] = 0;
+G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["4e"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4e"]["Name"] = [[border]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.RemoteExample.UITextSizeConstraint
+G2L["4f"] = Instance.new("UITextSizeConstraint", G2L["4d"]);
+G2L["4f"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Remotes.RemoteExample.Animate
+G2L["50"] = Instance.new("LocalScript", G2L["4d"]);
+G2L["50"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.RemoteExample.UIStroke
+G2L["51"] = Instance.new("UIStroke", G2L["4d"]);
+G2L["51"]["Transparency"] = 0.5;
+G2L["51"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["51"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote7
+G2L["52"] = Instance.new("TextButton", G2L["18"]);
+G2L["52"]["TextWrapped"] = true;
+G2L["52"]["BorderSizePixel"] = 0;
+G2L["52"]["TextSize"] = 14;
+G2L["52"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["52"]["TextScaled"] = true;
+G2L["52"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["52"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["52"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["52"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["52"]["BackgroundTransparency"] = 0.8;
+G2L["52"]["Name"] = [[Remote7]];
+G2L["52"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["52"]["Text"] = [[RemoteName]];
+G2L["52"]["Visible"] = false;
+G2L["52"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote7.border
+G2L["53"] = Instance.new("Frame", G2L["52"]);
+G2L["53"]["BorderSizePixel"] = 0;
+G2L["53"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["53"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["53"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["53"]["Name"] = [[border]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote7.UITextSizeConstraint
+G2L["54"] = Instance.new("UITextSizeConstraint", G2L["52"]);
+G2L["54"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote7.Animate
+G2L["55"] = Instance.new("LocalScript", G2L["52"]);
+G2L["55"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote7.UIStroke
+G2L["56"] = Instance.new("UIStroke", G2L["52"]);
+G2L["56"]["Transparency"] = 0.5;
+G2L["56"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["56"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote11
+G2L["57"] = Instance.new("TextButton", G2L["18"]);
+G2L["57"]["TextWrapped"] = true;
+G2L["57"]["BorderSizePixel"] = 0;
+G2L["57"]["TextSize"] = 14;
+G2L["57"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["57"]["TextScaled"] = true;
+G2L["57"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["57"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["57"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["57"]["Size"] = UDim2.new(0, 100, 0, 22);
+G2L["57"]["BackgroundTransparency"] = 0.8;
+G2L["57"]["Name"] = [[Remote11]];
+G2L["57"]["BorderColor3"] = Color3.fromRGB(94, 97, 103);
+G2L["57"]["Text"] = [[RemoteName]];
+G2L["57"]["Visible"] = false;
+G2L["57"]["Position"] = UDim2.new(2.328, 0, 0.81304, 0);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote11.border
+G2L["58"] = Instance.new("Frame", G2L["57"]);
+G2L["58"]["BorderSizePixel"] = 0;
+G2L["58"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["58"]["Size"] = UDim2.new(0.04, 0, 1, 0);
+G2L["58"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["58"]["Name"] = [[border]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote11.UITextSizeConstraint
+G2L["59"] = Instance.new("UITextSizeConstraint", G2L["57"]);
+G2L["59"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote11.Animate
+G2L["5a"] = Instance.new("LocalScript", G2L["57"]);
+G2L["5a"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Remotes.Remote11.UIStroke
+G2L["5b"] = Instance.new("UIStroke", G2L["57"]);
+G2L["5b"]["Transparency"] = 0.5;
+G2L["5b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["5b"]["Color"] = Color3.fromRGB(0, 171, 255);
+
+
+-- StarterGui.StellySpy.Frame.Remotes.UIListLayout
+G2L["5c"] = Instance.new("UIListLayout", G2L["18"]);
+G2L["5c"]["Padding"] = UDim.new(0, 5);
+G2L["5c"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.StellySpy.Frame.Assets
+G2L["5d"] = Instance.new("Folder", G2L["2"]);
+G2L["5d"]["Name"] = [[Assets]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons
+G2L["5e"] = Instance.new("ScrollingFrame", G2L["2"]);
+G2L["5e"]["Active"] = true;
+G2L["5e"]["SizeConstraint"] = Enum.SizeConstraint.RelativeYY;
+G2L["5e"]["BorderSizePixel"] = 0;
+G2L["5e"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["5e"]["CanvasPosition"] = Vector2.new(0, 8);
+G2L["5e"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["5e"]["Name"] = [[Buttons]];
+G2L["5e"]["AutomaticCanvasSize"] = Enum.AutomaticSize.XY;
+G2L["5e"]["Size"] = UDim2.new(0, 300, 0, 84);
+G2L["5e"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5e"]["Position"] = UDim2.new(0.29412, 0, 0.66, 0);
+G2L["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5e"]["ScrollBarThickness"] = 0;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.UIPadding
+G2L["5f"] = Instance.new("UIPadding", G2L["5e"]);
+G2L["5f"]["PaddingTop"] = UDim.new(0, 5);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.Clear
+G2L["60"] = Instance.new("TextButton", G2L["5e"]);
+G2L["60"]["TextWrapped"] = true;
+G2L["60"]["BorderSizePixel"] = 0;
+G2L["60"]["TextSize"] = 14;
+G2L["60"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["60"]["TextScaled"] = true;
+G2L["60"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 30);
+G2L["60"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["60"]["Size"] = UDim2.new(0, 95, 0, 18);
+G2L["60"]["Name"] = [[Clear]];
+G2L["60"]["BorderColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["60"]["Text"] = [[]];
+G2L["60"]["Position"] = UDim2.new(0, 0, 0.32941, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.Clear.Border
+G2L["61"] = Instance.new("Frame", G2L["60"]);
+G2L["61"]["BorderSizePixel"] = 0;
+G2L["61"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["61"]["Size"] = UDim2.new(0.05, 0, 1, 0);
+G2L["61"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["61"]["Name"] = [[Border]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.Clear.TextLabel
+G2L["62"] = Instance.new("TextLabel", G2L["60"]);
+G2L["62"]["TextWrapped"] = true;
+G2L["62"]["BorderSizePixel"] = 0;
+G2L["62"]["TextScaled"] = true;
+G2L["62"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["62"]["TextSize"] = 14;
+G2L["62"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["62"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["62"]["BackgroundTransparency"] = 1;
+G2L["62"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["62"]["Size"] = UDim2.new(0.89474, 0, 1, 0);
+G2L["62"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["62"]["Text"] = [[Clear Output]];
+G2L["62"]["Position"] = UDim2.new(0.53684, 0, 0.48382, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.Clear.TextLabel.UITextSizeConstraint
+G2L["63"] = Instance.new("UITextSizeConstraint", G2L["62"]);
+G2L["63"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.Clear.UITextSizeConstraint
+G2L["64"] = Instance.new("UITextSizeConstraint", G2L["60"]);
+G2L["64"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.Clear.UIStroke
+G2L["65"] = Instance.new("UIStroke", G2L["60"]);
+G2L["65"]["Transparency"] = 0.5;
+G2L["65"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["65"]["Color"] = Color3.fromRGB(151, 151, 151);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.Clear.Animate
+G2L["66"] = Instance.new("LocalScript", G2L["60"]);
+G2L["66"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.Clear.LocalScript
+G2L["67"] = Instance.new("LocalScript", G2L["60"]);
+
+
+
+-- StarterGui.StellySpy.Frame.Buttons.ClearL
+G2L["68"] = Instance.new("TextButton", G2L["5e"]);
+G2L["68"]["TextWrapped"] = true;
+G2L["68"]["BorderSizePixel"] = 0;
+G2L["68"]["TextSize"] = 14;
+G2L["68"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["68"]["TextScaled"] = true;
+G2L["68"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 30);
+G2L["68"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["68"]["Size"] = UDim2.new(0, 95, 0, 18);
+G2L["68"]["Name"] = [[ClearL]];
+G2L["68"]["BorderColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["68"]["Text"] = [[]];
+G2L["68"]["Position"] = UDim2.new(0, 0, 0.32941, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.ClearL.Border
+G2L["69"] = Instance.new("Frame", G2L["68"]);
+G2L["69"]["BorderSizePixel"] = 0;
+G2L["69"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["69"]["Size"] = UDim2.new(0.05, 0, 1, 0);
+G2L["69"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["69"]["Name"] = [[Border]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.ClearL.TextLabel
+G2L["6a"] = Instance.new("TextLabel", G2L["68"]);
+G2L["6a"]["TextWrapped"] = true;
+G2L["6a"]["BorderSizePixel"] = 0;
+G2L["6a"]["TextScaled"] = true;
+G2L["6a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6a"]["TextSize"] = 14;
+G2L["6a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6a"]["BackgroundTransparency"] = 1;
+G2L["6a"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["6a"]["Size"] = UDim2.new(0.89474, 0, 1, 0);
+G2L["6a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6a"]["Text"] = [[Clear Log]];
+G2L["6a"]["Position"] = UDim2.new(0.53684, 0, 0.48382, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.ClearL.TextLabel.UITextSizeConstraint
+G2L["6b"] = Instance.new("UITextSizeConstraint", G2L["6a"]);
+G2L["6b"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.ClearL.UITextSizeConstraint
+G2L["6c"] = Instance.new("UITextSizeConstraint", G2L["68"]);
+G2L["6c"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.ClearL.UIStroke
+G2L["6d"] = Instance.new("UIStroke", G2L["68"]);
+G2L["6d"]["Transparency"] = 0.5;
+G2L["6d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["6d"]["Color"] = Color3.fromRGB(151, 151, 151);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.ClearL.Animate
+G2L["6e"] = Instance.new("LocalScript", G2L["68"]);
+G2L["6e"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.CopyC
+G2L["6f"] = Instance.new("TextButton", G2L["5e"]);
+G2L["6f"]["TextWrapped"] = true;
+G2L["6f"]["BorderSizePixel"] = 0;
+G2L["6f"]["TextSize"] = 14;
+G2L["6f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6f"]["TextScaled"] = true;
+G2L["6f"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 30);
+G2L["6f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6f"]["Size"] = UDim2.new(0, 95, 0, 18);
+G2L["6f"]["Name"] = [[CopyC]];
+G2L["6f"]["BorderColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["6f"]["Text"] = [[]];
+G2L["6f"]["Position"] = UDim2.new(0, 0, 0.08235, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.CopyC.Border
+G2L["70"] = Instance.new("Frame", G2L["6f"]);
+G2L["70"]["BorderSizePixel"] = 0;
+G2L["70"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["70"]["Size"] = UDim2.new(0.05, 0, 1, 0);
+G2L["70"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["70"]["Name"] = [[Border]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.CopyC.TextLabel
+G2L["71"] = Instance.new("TextLabel", G2L["6f"]);
+G2L["71"]["TextWrapped"] = true;
+G2L["71"]["BorderSizePixel"] = 0;
+G2L["71"]["TextScaled"] = true;
+G2L["71"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["71"]["TextSize"] = 14;
+G2L["71"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["71"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["71"]["BackgroundTransparency"] = 1;
+G2L["71"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["71"]["Size"] = UDim2.new(0.89474, 0, 1, 0);
+G2L["71"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["71"]["Text"] = [[Copy Code]];
+G2L["71"]["Position"] = UDim2.new(0.53684, 0, 0.48382, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.CopyC.TextLabel.UITextSizeConstraint
+G2L["72"] = Instance.new("UITextSizeConstraint", G2L["71"]);
+G2L["72"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.CopyC.UITextSizeConstraint
+G2L["73"] = Instance.new("UITextSizeConstraint", G2L["6f"]);
+G2L["73"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.CopyC.UIStroke
+G2L["74"] = Instance.new("UIStroke", G2L["6f"]);
+G2L["74"]["Transparency"] = 0.5;
+G2L["74"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["74"]["Color"] = Color3.fromRGB(151, 151, 151);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.CopyC.Animate
+G2L["75"] = Instance.new("LocalScript", G2L["6f"]);
+G2L["75"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.CopyC.LocalScript
+G2L["76"] = Instance.new("LocalScript", G2L["6f"]);
+
+
+
+-- StarterGui.StellySpy.Frame.Buttons.CopyR
+G2L["77"] = Instance.new("TextButton", G2L["5e"]);
+G2L["77"]["TextWrapped"] = true;
+G2L["77"]["BorderSizePixel"] = 0;
+G2L["77"]["TextSize"] = 14;
+G2L["77"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["77"]["TextScaled"] = true;
+G2L["77"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 30);
+G2L["77"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["77"]["Size"] = UDim2.new(0, 95, 0, 18);
+G2L["77"]["Name"] = [[CopyR]];
+G2L["77"]["BorderColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["77"]["Text"] = [[]];
+G2L["77"]["Position"] = UDim2.new(0.32, 0, 0.08235, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.CopyR.Border
+G2L["78"] = Instance.new("Frame", G2L["77"]);
+G2L["78"]["BorderSizePixel"] = 0;
+G2L["78"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["78"]["Size"] = UDim2.new(0.05, 0, 1, 0);
+G2L["78"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["78"]["Name"] = [[Border]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.CopyR.TextLabel
+G2L["79"] = Instance.new("TextLabel", G2L["77"]);
+G2L["79"]["TextWrapped"] = true;
+G2L["79"]["BorderSizePixel"] = 0;
+G2L["79"]["TextScaled"] = true;
+G2L["79"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["79"]["TextSize"] = 14;
+G2L["79"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["79"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["79"]["BackgroundTransparency"] = 1;
+G2L["79"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["79"]["Size"] = UDim2.new(0.89474, 0, 1, 0);
+G2L["79"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["79"]["Text"] = [[Copy Remote]];
+G2L["79"]["Position"] = UDim2.new(0.53684, 0, 0.48382, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.CopyR.TextLabel.UITextSizeConstraint
+G2L["7a"] = Instance.new("UITextSizeConstraint", G2L["79"]);
+G2L["7a"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.CopyR.UITextSizeConstraint
+G2L["7b"] = Instance.new("UITextSizeConstraint", G2L["77"]);
+G2L["7b"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.CopyR.UIStroke
+G2L["7c"] = Instance.new("UIStroke", G2L["77"]);
+G2L["7c"]["Transparency"] = 0.5;
+G2L["7c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["7c"]["Color"] = Color3.fromRGB(151, 151, 151);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.CopyR.Animate
+G2L["7d"] = Instance.new("LocalScript", G2L["77"]);
+G2L["7d"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.ExL
+G2L["7e"] = Instance.new("TextButton", G2L["5e"]);
+G2L["7e"]["TextWrapped"] = true;
+G2L["7e"]["BorderSizePixel"] = 0;
+G2L["7e"]["TextSize"] = 14;
+G2L["7e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7e"]["TextScaled"] = true;
+G2L["7e"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 30);
+G2L["7e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7e"]["Size"] = UDim2.new(0, 95, 0, 18);
+G2L["7e"]["Name"] = [[ExL]];
+G2L["7e"]["BorderColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["7e"]["Text"] = [[]];
+G2L["7e"]["Position"] = UDim2.new(0, 0, 0.32941, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.ExL.Border
+G2L["7f"] = Instance.new("Frame", G2L["7e"]);
+G2L["7f"]["BorderSizePixel"] = 0;
+G2L["7f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7f"]["Size"] = UDim2.new(0.05, 0, 1, 0);
+G2L["7f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7f"]["Name"] = [[Border]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.ExL.
+G2L["80"] = Instance.new("TextLabel", G2L["7e"]);
+G2L["80"]["TextWrapped"] = true;
+G2L["80"]["BorderSizePixel"] = 0;
+G2L["80"]["TextScaled"] = true;
+G2L["80"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["80"]["TextSize"] = 14;
+G2L["80"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["80"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["80"]["BackgroundTransparency"] = 1;
+G2L["80"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["80"]["Size"] = UDim2.new(0.89474, 0, 1, 0);
+G2L["80"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["80"]["Text"] = [[Exclude Remote]];
+G2L["80"]["Name"] = [[]];
+G2L["80"]["Position"] = UDim2.new(0.53684, 0, 0.48382, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.ExL..UITextSizeConstraint
+G2L["81"] = Instance.new("UITextSizeConstraint", G2L["80"]);
+G2L["81"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.ExL.UITextSizeConstraint
+G2L["82"] = Instance.new("UITextSizeConstraint", G2L["7e"]);
+G2L["82"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.ExL.UIStroke
+G2L["83"] = Instance.new("UIStroke", G2L["7e"]);
+G2L["83"]["Transparency"] = 0.5;
+G2L["83"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["83"]["Color"] = Color3.fromRGB(151, 151, 151);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.ExL.Animate
+G2L["84"] = Instance.new("LocalScript", G2L["7e"]);
+G2L["84"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.Run
+G2L["85"] = Instance.new("TextButton", G2L["5e"]);
+G2L["85"]["TextWrapped"] = true;
+G2L["85"]["BorderSizePixel"] = 0;
+G2L["85"]["TextSize"] = 14;
+G2L["85"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["85"]["TextScaled"] = true;
+G2L["85"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 30);
+G2L["85"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["85"]["Size"] = UDim2.new(0, 95, 0, 18);
+G2L["85"]["Name"] = [[Run]];
+G2L["85"]["BorderColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["85"]["Text"] = [[]];
+G2L["85"]["Position"] = UDim2.new(0.69333, 0, 0.08235, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.Run.Border
+G2L["86"] = Instance.new("Frame", G2L["85"]);
+G2L["86"]["BorderSizePixel"] = 0;
+G2L["86"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["86"]["Size"] = UDim2.new(0.05, 0, 1, 0);
+G2L["86"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["86"]["Name"] = [[Border]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.Run.TextLabel
+G2L["87"] = Instance.new("TextLabel", G2L["85"]);
+G2L["87"]["TextWrapped"] = true;
+G2L["87"]["BorderSizePixel"] = 0;
+G2L["87"]["TextScaled"] = true;
+G2L["87"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["87"]["TextSize"] = 14;
+G2L["87"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["87"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["87"]["BackgroundTransparency"] = 1;
+G2L["87"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["87"]["Size"] = UDim2.new(0.89474, 0, 1, 0);
+G2L["87"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["87"]["Text"] = [[Fire or Invoke]];
+G2L["87"]["Position"] = UDim2.new(0.53684, 0, 0.48382, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.Run.TextLabel.UITextSizeConstraint
+G2L["88"] = Instance.new("UITextSizeConstraint", G2L["87"]);
+G2L["88"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.Run.UITextSizeConstraint
+G2L["89"] = Instance.new("UITextSizeConstraint", G2L["85"]);
+G2L["89"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.Run.UIStroke
+G2L["8a"] = Instance.new("UIStroke", G2L["85"]);
+G2L["8a"]["Transparency"] = 0.5;
+G2L["8a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["8a"]["Color"] = Color3.fromRGB(151, 151, 151);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.Run.Animate
+G2L["8b"] = Instance.new("LocalScript", G2L["85"]);
+G2L["8b"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.RunS
+G2L["8c"] = Instance.new("TextButton", G2L["5e"]);
+G2L["8c"]["TextWrapped"] = true;
+G2L["8c"]["BorderSizePixel"] = 0;
+G2L["8c"]["TextSize"] = 14;
+G2L["8c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8c"]["TextScaled"] = true;
+G2L["8c"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 30);
+G2L["8c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8c"]["Size"] = UDim2.new(0, 95, 0, 18);
+G2L["8c"]["Name"] = [[RunS]];
+G2L["8c"]["BorderColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["8c"]["Text"] = [[]];
+G2L["8c"]["Position"] = UDim2.new(0.69333, 0, 0.08235, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.RunS.Border
+G2L["8d"] = Instance.new("Frame", G2L["8c"]);
+G2L["8d"]["BorderSizePixel"] = 0;
+G2L["8d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8d"]["Size"] = UDim2.new(0.05, 0, 1, 0);
+G2L["8d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8d"]["Name"] = [[Border]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.RunS.TextLabel
+G2L["8e"] = Instance.new("TextLabel", G2L["8c"]);
+G2L["8e"]["TextWrapped"] = true;
+G2L["8e"]["BorderSizePixel"] = 0;
+G2L["8e"]["TextScaled"] = true;
+G2L["8e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8e"]["TextSize"] = 14;
+G2L["8e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8e"]["BackgroundTransparency"] = 1;
+G2L["8e"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["8e"]["Size"] = UDim2.new(0.89474, 0, 1, 0);
+G2L["8e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8e"]["Text"] = [[Run Code]];
+G2L["8e"]["Position"] = UDim2.new(0.53684, 0, 0.48382, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.RunS.TextLabel.UITextSizeConstraint
+G2L["8f"] = Instance.new("UITextSizeConstraint", G2L["8e"]);
+G2L["8f"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.RunS.UITextSizeConstraint
+G2L["90"] = Instance.new("UITextSizeConstraint", G2L["8c"]);
+G2L["90"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.RunS.UIStroke
+G2L["91"] = Instance.new("UIStroke", G2L["8c"]);
+G2L["91"]["Transparency"] = 0.5;
+G2L["91"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["91"]["Color"] = Color3.fromRGB(151, 151, 151);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.RunS.Animate
+G2L["92"] = Instance.new("LocalScript", G2L["8c"]);
+G2L["92"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.RunS.LocalScript
+G2L["93"] = Instance.new("LocalScript", G2L["8c"]);
+
+
+
+-- StarterGui.StellySpy.Frame.Buttons.dc
+G2L["94"] = Instance.new("TextButton", G2L["5e"]);
+G2L["94"]["TextWrapped"] = true;
+G2L["94"]["BorderSizePixel"] = 0;
+G2L["94"]["TextSize"] = 14;
+G2L["94"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["94"]["TextScaled"] = true;
+G2L["94"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 30);
+G2L["94"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["94"]["Size"] = UDim2.new(0, 95, 0, 18);
+G2L["94"]["Name"] = [[dc]];
+G2L["94"]["BorderColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["94"]["Text"] = [[]];
+G2L["94"]["Position"] = UDim2.new(0.69333, 0, 0.08235, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.dc.Border
+G2L["95"] = Instance.new("Frame", G2L["94"]);
+G2L["95"]["BorderSizePixel"] = 0;
+G2L["95"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["95"]["Size"] = UDim2.new(0.05, 0, 1, 0);
+G2L["95"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["95"]["Name"] = [[Border]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.dc.TextLabel
+G2L["96"] = Instance.new("TextLabel", G2L["94"]);
+G2L["96"]["TextWrapped"] = true;
+G2L["96"]["BorderSizePixel"] = 0;
+G2L["96"]["TextScaled"] = true;
+G2L["96"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["96"]["TextSize"] = 14;
+G2L["96"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["96"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["96"]["BackgroundTransparency"] = 1;
+G2L["96"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["96"]["Size"] = UDim2.new(0.89474, 0, 1, 0);
+G2L["96"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["96"]["Text"] = [[Discord]];
+G2L["96"]["Position"] = UDim2.new(0.53684, 0, 0.48382, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.dc.TextLabel.UITextSizeConstraint
+G2L["97"] = Instance.new("UITextSizeConstraint", G2L["96"]);
+G2L["97"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.dc.UITextSizeConstraint
+G2L["98"] = Instance.new("UITextSizeConstraint", G2L["94"]);
+G2L["98"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.dc.UIStroke
+G2L["99"] = Instance.new("UIStroke", G2L["94"]);
+G2L["99"]["Transparency"] = 0.5;
+G2L["99"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["99"]["Color"] = Color3.fromRGB(151, 151, 151);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.dc.Animate
+G2L["9a"] = Instance.new("LocalScript", G2L["94"]);
+G2L["9a"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.dc.LocalScript
+G2L["9b"] = Instance.new("LocalScript", G2L["94"]);
+
+
+
+-- StarterGui.StellySpy.Frame.Buttons.yt
+G2L["9c"] = Instance.new("TextButton", G2L["5e"]);
+G2L["9c"]["TextWrapped"] = true;
+G2L["9c"]["BorderSizePixel"] = 0;
+G2L["9c"]["TextSize"] = 14;
+G2L["9c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9c"]["TextScaled"] = true;
+G2L["9c"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 30);
+G2L["9c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9c"]["Size"] = UDim2.new(0, 95, 0, 18);
+G2L["9c"]["Name"] = [[yt]];
+G2L["9c"]["BorderColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["9c"]["Text"] = [[]];
+G2L["9c"]["Position"] = UDim2.new(0.69333, 0, 0.08235, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.yt.Border
+G2L["9d"] = Instance.new("Frame", G2L["9c"]);
+G2L["9d"]["BorderSizePixel"] = 0;
+G2L["9d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9d"]["Size"] = UDim2.new(0.05, 0, 1, 0);
+G2L["9d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9d"]["Name"] = [[Border]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.yt.TextLabel
+G2L["9e"] = Instance.new("TextLabel", G2L["9c"]);
+G2L["9e"]["TextWrapped"] = true;
+G2L["9e"]["BorderSizePixel"] = 0;
+G2L["9e"]["TextScaled"] = true;
+G2L["9e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9e"]["TextSize"] = 14;
+G2L["9e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9e"]["BackgroundTransparency"] = 1;
+G2L["9e"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["9e"]["Size"] = UDim2.new(0.89474, 0, 1, 0);
+G2L["9e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9e"]["Text"] = [[Youtube]];
+G2L["9e"]["Position"] = UDim2.new(0.53684, 0, 0.48382, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.yt.TextLabel.UITextSizeConstraint
+G2L["9f"] = Instance.new("UITextSizeConstraint", G2L["9e"]);
+G2L["9f"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.yt.UITextSizeConstraint
+G2L["a0"] = Instance.new("UITextSizeConstraint", G2L["9c"]);
+G2L["a0"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.yt.UIStroke
+G2L["a1"] = Instance.new("UIStroke", G2L["9c"]);
+G2L["a1"]["Transparency"] = 0.5;
+G2L["a1"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["a1"]["Color"] = Color3.fromRGB(151, 151, 151);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.yt.Animate
+G2L["a2"] = Instance.new("LocalScript", G2L["9c"]);
+G2L["a2"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.yt.LocalScript
+G2L["a3"] = Instance.new("LocalScript", G2L["9c"]);
+
+
+
+-- StarterGui.StellySpy.Frame.Buttons.UIListLayout
+G2L["a4"] = Instance.new("UIListLayout", G2L["5e"]);
+G2L["a4"]["Wraps"] = true;
+G2L["a4"]["Padding"] = UDim.new(0, 5);
+G2L["a4"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["a4"]["FillDirection"] = Enum.FillDirection.Horizontal;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.FireALL
+G2L["a5"] = Instance.new("TextButton", G2L["5e"]);
+G2L["a5"]["TextWrapped"] = true;
+G2L["a5"]["BorderSizePixel"] = 0;
+G2L["a5"]["TextSize"] = 14;
+G2L["a5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a5"]["TextScaled"] = true;
+G2L["a5"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 30);
+G2L["a5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a5"]["Size"] = UDim2.new(0, 95, 0, 18);
+G2L["a5"]["Name"] = [[FireALL]];
+G2L["a5"]["BorderColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["a5"]["Text"] = [[]];
+G2L["a5"]["Position"] = UDim2.new(0, 0, 0.32941, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.FireALL.Border
+G2L["a6"] = Instance.new("Frame", G2L["a5"]);
+G2L["a6"]["BorderSizePixel"] = 0;
+G2L["a6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a6"]["Size"] = UDim2.new(0.05, 0, 1, 0);
+G2L["a6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a6"]["Name"] = [[Border]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.FireALL.TextLabel
+G2L["a7"] = Instance.new("TextLabel", G2L["a5"]);
+G2L["a7"]["TextWrapped"] = true;
+G2L["a7"]["BorderSizePixel"] = 0;
+G2L["a7"]["TextScaled"] = true;
+G2L["a7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a7"]["TextSize"] = 14;
+G2L["a7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a7"]["BackgroundTransparency"] = 1;
+G2L["a7"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["a7"]["Size"] = UDim2.new(0.89474, 0, 1, 0);
+G2L["a7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a7"]["Text"] = [[Fire all remotes]];
+G2L["a7"]["Position"] = UDim2.new(0.53684, 0, 0.48382, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.FireALL.TextLabel.UITextSizeConstraint
+G2L["a8"] = Instance.new("UITextSizeConstraint", G2L["a7"]);
+G2L["a8"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.FireALL.Function
+G2L["a9"] = Instance.new("LocalScript", G2L["a5"]);
+G2L["a9"]["Name"] = [[Function]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.FireALL.UIStroke
+G2L["aa"] = Instance.new("UIStroke", G2L["a5"]);
+G2L["aa"]["Transparency"] = 0.5;
+G2L["aa"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["aa"]["Color"] = Color3.fromRGB(151, 151, 151);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.FireALL.UITextSizeConstraint
+G2L["ab"] = Instance.new("UITextSizeConstraint", G2L["a5"]);
+G2L["ab"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.FireALL.Animate
+G2L["ac"] = Instance.new("LocalScript", G2L["a5"]);
+G2L["ac"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.ataR
+G2L["ad"] = Instance.new("TextButton", G2L["5e"]);
+G2L["ad"]["TextWrapped"] = true;
+G2L["ad"]["BorderSizePixel"] = 0;
+G2L["ad"]["TextSize"] = 14;
+G2L["ad"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ad"]["TextScaled"] = true;
+G2L["ad"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 30);
+G2L["ad"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ad"]["Size"] = UDim2.new(0, 95, 0, 18);
+G2L["ad"]["Name"] = [[ataR]];
+G2L["ad"]["BorderColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["ad"]["Text"] = [[]];
+G2L["ad"]["Position"] = UDim2.new(0.69333, 0, 0.08235, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.ataR.Border
+G2L["ae"] = Instance.new("Frame", G2L["ad"]);
+G2L["ae"]["BorderSizePixel"] = 0;
+G2L["ae"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ae"]["Size"] = UDim2.new(0.05, 0, 1, 0);
+G2L["ae"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ae"]["Name"] = [[Border]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.ataR.TextLabel
+G2L["af"] = Instance.new("TextLabel", G2L["ad"]);
+G2L["af"]["TextWrapped"] = true;
+G2L["af"]["BorderSizePixel"] = 0;
+G2L["af"]["TextScaled"] = true;
+G2L["af"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["af"]["TextSize"] = 14;
+G2L["af"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["af"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["af"]["BackgroundTransparency"] = 1;
+G2L["af"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["af"]["Size"] = UDim2.new(0.89474, 0, 1, 0);
+G2L["af"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["af"]["Text"] = [[Attack Remote]];
+G2L["af"]["Position"] = UDim2.new(0.53684, 0, 0.48382, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.ataR.TextLabel.UITextSizeConstraint
+G2L["b0"] = Instance.new("UITextSizeConstraint", G2L["af"]);
+G2L["b0"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.ataR.UITextSizeConstraint
+G2L["b1"] = Instance.new("UITextSizeConstraint", G2L["ad"]);
+G2L["b1"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.ataR.UIStroke
+G2L["b2"] = Instance.new("UIStroke", G2L["ad"]);
+G2L["b2"]["Transparency"] = 0.5;
+G2L["b2"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["b2"]["Color"] = Color3.fromRGB(151, 151, 151);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.ataR.Animate
+G2L["b3"] = Instance.new("LocalScript", G2L["ad"]);
+G2L["b3"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.UpLogs
+G2L["b4"] = Instance.new("TextButton", G2L["5e"]);
+G2L["b4"]["TextWrapped"] = true;
+G2L["b4"]["BorderSizePixel"] = 0;
+G2L["b4"]["TextSize"] = 14;
+G2L["b4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b4"]["TextScaled"] = true;
+G2L["b4"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 30);
+G2L["b4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b4"]["Size"] = UDim2.new(0, 95, 0, 18);
+G2L["b4"]["Name"] = [[UpLogs]];
+G2L["b4"]["BorderColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["b4"]["Text"] = [[]];
+G2L["b4"]["Position"] = UDim2.new(0.69333, 0, 0.08235, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.UpLogs.Border
+G2L["b5"] = Instance.new("Frame", G2L["b4"]);
+G2L["b5"]["BorderSizePixel"] = 0;
+G2L["b5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b5"]["Size"] = UDim2.new(0.05, 0, 1, 0);
+G2L["b5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b5"]["Name"] = [[Border]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.UpLogs.TextLabel
+G2L["b6"] = Instance.new("TextLabel", G2L["b4"]);
+G2L["b6"]["TextWrapped"] = true;
+G2L["b6"]["BorderSizePixel"] = 0;
+G2L["b6"]["TextScaled"] = true;
+G2L["b6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b6"]["TextSize"] = 14;
+G2L["b6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b6"]["BackgroundTransparency"] = 1;
+G2L["b6"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["b6"]["Size"] = UDim2.new(0.89474, 0, 1, 0);
+G2L["b6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b6"]["Text"] = [[Update Logs]];
+G2L["b6"]["Position"] = UDim2.new(0.53684, 0, 0.48382, 0);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.UpLogs.TextLabel.UITextSizeConstraint
+G2L["b7"] = Instance.new("UITextSizeConstraint", G2L["b6"]);
+G2L["b7"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.UpLogs.UITextSizeConstraint
+G2L["b8"] = Instance.new("UITextSizeConstraint", G2L["b4"]);
+G2L["b8"]["MaxTextSize"] = 14;
+
+
+-- StarterGui.StellySpy.Frame.Buttons.UpLogs.UIStroke
+G2L["b9"] = Instance.new("UIStroke", G2L["b4"]);
+G2L["b9"]["Transparency"] = 0.5;
+G2L["b9"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["b9"]["Color"] = Color3.fromRGB(151, 151, 151);
+
+
+-- StarterGui.StellySpy.Frame.Buttons.UpLogs.Animate
+G2L["ba"] = Instance.new("LocalScript", G2L["b4"]);
+G2L["ba"]["Name"] = [[Animate]];
+
+
+-- StarterGui.StellySpy.Frame.Buttons.UpLogs.LocalScript
+G2L["bb"] = Instance.new("LocalScript", G2L["b4"]);
+
+
+
+-- StarterGui.StellySpy.Frame.CDrag
+G2L["bc"] = Instance.new("LocalScript", G2L["2"]);
+G2L["bc"]["Name"] = [[CDrag]];
+
+
+-- StarterGui.StellySpy.SetCore
+G2L["bd"] = Instance.new("LocalScript", G2L["1"]);
+G2L["bd"]["Name"] = [[SetCore]];
+
+
+-- StarterGui.StellySpy.Zindex
+G2L["be"] = Instance.new("LocalScript", G2L["1"]);
+G2L["be"]["Name"] = [[Zindex]];
+
+
+-- Require G2L wrapper
+local G2L_REQUIRE = require;
+local G2L_MODULES = {};
+local function require(Module:ModuleScript)
+    local ModuleState = G2L_MODULES[Module];
+    if ModuleState then
+        if not ModuleState.Required then
+            ModuleState.Required = true;
+            ModuleState.Value = ModuleState.Closure();
+        end
+        return ModuleState.Value;
+    end;
+    return G2L_REQUIRE(Module);
+end
+
+G2L_MODULES[G2L["17"]] = {
+Closure = function()
+    local script = G2L["17"];local module = {}
+
+local mouse = game.Players.LocalPlayer:GetMouse()
+
+local DRAGGER_SIZE = 30
+local DRAGGER_TRANSPARENCY = .5
+
+local dragging = false
+
+function module.makeResizable(obj:GuiObject, minSize)
+	
+	local resizer = script.Parent.resizer:Clone()
+	local dragger = resizer.dragger
+	
+	resizer.Size = UDim2.fromOffset(DRAGGER_SIZE, DRAGGER_SIZE)
+	resizer.Position = UDim2.new(1, -DRAGGER_SIZE, 1, -DRAGGER_SIZE)
+	
+	local duic = dragger.UICorner
+	minSize = minSize or Vector2.new(160, 90)
+	
+	local startDrag, startSize
+	local gui = obj:FindFirstAncestorWhichIsA("ScreenGui")
+	resizer.Parent = obj
+
+	local function finishResize(tr)
+		dragger.Position = UDim2.new(0,0,0,0)
+		dragger.Size = UDim2.new(2,0,2,0)
+		dragger.Parent = resizer
+		dragger.BackgroundTransparency = tr
+		duic.Parent = dragger
+		startDrag = nil
+	end
+	dragger.MouseButton1Down:Connect(function()
+		if not startDrag then
+			startSize = obj.AbsoluteSize			
+			startDrag = Vector2.new(mouse.X, mouse.Y)
+			dragger.BackgroundTransparency = 1
+			dragger.Size = UDim2.fromOffset(gui.AbsoluteSize.X, gui.AbsoluteSize.Y)
+			dragger.Position = UDim2.new(0,0,0,0)
+			duic.Parent = nil
+			dragger.Parent = gui
+		end
+	end)	
+	dragger.MouseMoved:Connect(function()
+		local TweenService = game:GetService("TweenService")
+		local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
+
+		if startDrag then
+			local m = Vector2.new(mouse.X, mouse.Y)
+			local mouseMoved = Vector2.new(m.X - startDrag.X, m.Y - startDrag.Y)
+
+			local s = startSize + mouseMoved
+			local sx = math.max(minSize.X, s.X)
+			local sy = math.max(minSize.Y, s.Y)
+
+			local targetSize = UDim2.fromOffset(sx, sy)
+
+			-- Cria e executa o Tween para suavizar o ajuste de tamanho
+			local tween = TweenService:Create(obj, tweenInfo, { Size = targetSize })
+			tween:Play()
+		end
+	end)
+	dragger.MouseEnter:Connect(function()
+		finishResize(DRAGGER_TRANSPARENCY)				
+	end)
+	dragger.MouseLeave:Connect(function()
+		finishResize(1)
+	end)		
+	dragger.MouseButton1Up:Connect(function()
+		finishResize(DRAGGER_TRANSPARENCY)
+	end)	
+end
+
+function module.makeDraggable(obj)
+	local UIS = game:GetService("UserInputService")
+	local dragInput, dragStart
+	local startPos = obj.Position 
+	local dragger = obj	
+	local function updateInput(input)
+		local offset = input.Position - dragStart
+		local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + offset.X, startPos.Y.Scale, startPos.Y.Offset + offset.Y)
+		game:GetService("TweenService"):Create(obj, TweenInfo.new(.50, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {Position = Position}):Play()
+	end
+	dragger.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and not UIS:GetFocusedTextBox() then
+			dragging = true
+			dragStart = input.Position
+			startPos = obj.Position
+			module.dragged = obj
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	dragger.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	UIS.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			updateInput(input)
+		end
+	end)
+end
+
+return module
+
+end;
+};
+-- StarterGui.StellySpy.Frame.TopBar.X.LocalScript
+local function C_5()
+local script = G2L["5"];
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		script.Parent.Parent.Parent.Parent:Destroy()
+		
+	end)
+end;
+task.spawn(C_5);
+-- StarterGui.StellySpy.Frame.TopBar.Name.LocalScript
+local function C_8()
+local script = G2L["8"];
+	local TweenService = game:GetService("TweenService")
+	local textLabel = script.Parent
+	
+	local redColor = Color3.fromRGB(60, 255, 0)
+	local normalColor = textLabel.TextColor3
+	
+	local tweenInfo = TweenInfo.new(
+		1,
+		Enum.EasingStyle.Quad,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local function changeColorToRedAndBack()
+		local tweenToRed = TweenService:Create(textLabel, tweenInfo, {TextColor3 = redColor})
+		tweenToRed:Play()
+	
+		tweenToRed.Completed:Connect(function()
+			local tweenBack = TweenService:Create(textLabel, tweenInfo, {TextColor3 = normalColor})
+			tweenBack:Play()
+		end)
+	end
+	
+	changeColorToRedAndBack()
+	
+end;
+task.spawn(C_8);
+-- StarterGui.StellySpy.Frame.TopBar.V3.LocalScript
+local function C_b()
+local script = G2L["b"];
+	local TweenService = game:GetService("TweenService")
+	local textLabel = script.Parent
+	
+	local redColor = Color3.fromRGB(255, 0, 0)
+	local normalColor = textLabel.TextColor3
+	
+	local tweenInfo = TweenInfo.new(
+		1,
+		Enum.EasingStyle.Quad,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local function changeColorToRedAndBack()
+		local tweenToRed = TweenService:Create(textLabel, tweenInfo, {TextColor3 = redColor})
+		tweenToRed:Play()
+	
+		tweenToRed.Completed:Connect(function()
+			local tweenBack = TweenService:Create(textLabel, tweenInfo, {TextColor3 = normalColor})
+			tweenBack:Play()
+		end)
+	end
+	
+	changeColorToRedAndBack()
+	
+end;
+task.spawn(C_b);
+-- StarterGui.StellySpy.Frame.TopBar.V3.mobile
+local function C_c()
+local script = G2L["c"];
+	local UserInputService = game:GetService("UserInputService")
+	
+	if UserInputService.TouchEnabled then
+		script.Parent.Text = "V3 Mobile"
+		script.Parent.Position = UDim2.new(0.179, 0, 0, 0)
+	else
+	
+	end
+	
+end;
+task.spawn(C_c);
+-- StarterGui.StellySpy.Frame.CodeSample.Color
+local function C_e()
+local script = G2L["e"];
+	local textBox = script.Parent
+	local TweenService = game:GetService("TweenService")
+	local colors = {
+		Color3.fromRGB(255, 0, 0),
+		Color3.fromRGB(0, 255, 0),
+		Color3.fromRGB(255, 255, 0),
+		Color3.fromRGB(255, 0, 255),
+		Color3.fromRGB(0, 255, 255),
+	}
+	
+	local interval = 0.5
+	local currentIndex = 1
+	
+	local function createTween(color)
+		local tweenInfo = TweenInfo.new(interval, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+		local goal = {TextColor3 = color}
+		return TweenService:Create(textBox, tweenInfo, goal)
+	end
+	
+	local function changeTextColor()
+		while true do
+			local tween = createTween(colors[currentIndex])
+			tween:Play()
+			tween.Completed:Wait()
+			currentIndex = currentIndex + 1
+			if currentIndex > #colors then
+				currentIndex = 1
+			end
+			wait(interval)
+		end
+	end
+	
+	changeTextColor()
+end;
+task.spawn(C_e);
+-- StarterGui.StellySpy.Frame.CodeSample.Anim
+local function C_10()
+local script = G2L["10"];
+	local textBox = script.Parent
+	local playerName = game.Players.LocalPlayer.DisplayName
+	local fullText = "Welcome " .. playerName .. "!"
+	local currentText = ""
+	local Load = "Loaded!"
+	local te = ""
+	for i = 1, #fullText do
+		te = te .. Load:sub(i, i)
+		textBox.Text = te
+		wait(0.09)
+	end
+	wait(3)
+	if textBox.Text ~= "Loaded!" then
+		
+	else
+	for i = 1, #fullText do
+		currentText = currentText .. fullText:sub(i, i)
+		textBox.Text = currentText
+		wait(0.1)
+	   end
+	end
+end;
+task.spawn(C_10);
+-- StarterGui.StellySpy.Frame.Drag
+local function C_11()
+local script = G2L["11"];
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+	-- Cell drag by ilikelimeclips2
+	local gui = script.Parent
+	local dragging = false
+	local dragInput, dragStart, startPos
+	
+	local function updateDrag(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input, gameProcessed)
+		if gameProcessed then return end
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			input.Changed:Connect(function()
+				if dragging then
+					updateDrag(input)
+				end
+			end)
+		end
+	end)
+	
+	gui.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = false
+		end
+	end)
+	
+	--[[
+	
+	██      ██   ██ ████████ ██  ██████  ██ ███    ██ ██  ██████  
+	██      ██   ██    ██    ██ ██      ███ ████   ██ ██ ██    ██ 
+	██      ███████    ██    ██ ██       ██ ██ ██  ██ ██ ██    ██ 
+	██           ██    ██    ██ ██       ██ ██  ██ ██ ██ ██    ██ 
+	███████      ██    ██    ██  ██████  ██ ██   ████ ██  ██████  
+	                                                            
+	
+	]]
+end;
+task.spawn(C_11);
+-- StarterGui.StellySpy.Frame.Main
+local function C_12()
+local script = G2L["12"];
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local executedRemotes = {}
+	
+	local textbox = script.Parent.CodeSample
+	local buttons = script.Parent.Remotes
+	local button1 = buttons.Remote1
+	local button2 = buttons.Remote2
+	local button3 = buttons.Remote3
+	local button4 = buttons.Remote4
+	local button5 = buttons.Remote5
+	local button6 = buttons.Remote6
+	local button7 = buttons.Remote7
+	local button8 = buttons.Remote8
+	local button9 = buttons.Remote9
+	local button10 = buttons.Remote10
+	local button11 = buttons.Remote11
+	local runButton = script.Parent.Buttons.Run
+	local dup = script.Parent.Buttons.CopyR
+	local ExcludeLogs = script.Parent.Buttons.ClearL
+	local Excludermt = script.Parent.Buttons.ExL
+	local ata = script.Parent.Buttons.ataR
+	
+	local buttonList = {button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11}
+	local selectedRemote = nil
+	
+	local function generateCode(remote)
+		if remote:IsA("RemoteEvent") then
+			return string.format("game:GetService('%s').%s:FireServer(arg1, arg2)", remote.Parent.Name, remote.Name)
+		elseif remote:IsA("RemoteFunction") then
+			return string.format("local RemoteFunction = game:GetService('%s').%s:InvokeServer(arg1, arg2)", remote.Parent.Name, remote.Name)
+		end
+	end
+	
+	local function assignButton(remote, button)
+		if remote:IsA("RemoteEvent") then
+			button.Text = remote.Name
+			button.Visible = true
+			button.MouseButton1Click:Connect(function()
+				selectedRemote = remote
+				textbox.Text = generateCode(remote)
+			end)
+		else
+	
+			button.Text = remote.Name
+			button.Visible = true
+			button.MouseButton1Click:Connect(function()
+				selectedRemote = remote
+				textbox.Text = generateCode(remote)
+			end)
+		end
+	end
+	
+	local function processExecutedRemote(remote)
+		if executedRemotes[remote] then return end
+		executedRemotes[remote] = true
+	
+		local firstInvisibleButton = nil
+	
+		for _, button in ipairs(buttonList) do
+			if not button.Visible then
+				firstInvisibleButton = button
+				break
+			end
+		end
+	
+		if not firstInvisibleButton then
+			local newButton = button1:Clone()
+			newButton.Name = "Remote" .. #buttonList + 1
+			newButton.Parent = buttons
+			table.insert(buttonList, newButton)
+			firstInvisibleButton = newButton
+		end
+	
+		assignButton(remote, firstInvisibleButton)
+	end
+	
+	local function monitorRemotes()
+		for _, remote in ipairs(ReplicatedStorage:GetDescendants()) do
+			if remote:IsA("RemoteEvent") or remote:IsA("RemoteFunction") then
+				processExecutedRemote(remote)
+			end
+		end
+	
+		ReplicatedStorage.DescendantAdded:Connect(function(descendant)
+			if descendant:IsA("RemoteEvent") or descendant:IsA("RemoteFunction") then
+				processExecutedRemote(descendant)
+			end
+		end)
+	end
+	
+	monitorRemotes()
+	
+	runButton.MouseButton1Click:Connect(function()
+		if selectedRemote then
+			if selectedRemote:IsA("RemoteEvent") then
+				selectedRemote:FireServer()
+			elseif selectedRemote:IsA("RemoteFunction") then
+				selectedRemote:InvokeServer()
+				print(selectedRemote.Name .. " Fired!")
+			end
+			print(selectedRemote.Name .. " Fired!")
+		else
+			textbox.Text = "No remotes selected!"
+		end
+	end)
+	
+	dup.MouseButton1Click:Connect(function()
+		if selectedRemote then
+			local clonedRemote = selectedRemote:Clone()
+			clonedRemote.Parent = ReplicatedStorage
+		end
+	end)
+	
+	ExcludeLogs.MouseButton1Click:Connect(function()
+		if selectedRemote then
+			for _, button in ipairs(buttonList) do
+				if button.Text == selectedRemote.Name then
+					button.Text = ""
+					button.Visible = false
+					break
+				end
+			end
+		end
+	end)
+	
+	Excludermt.MouseButton1Click:Connect(function()
+		textbox.Text = "Deleting..."
+		wait(4)
+		if selectedRemote then
+			selectedRemote:Destroy()
+			textbox.Text = "Remote Deleted! (Use 'Clear Log' to remove from the list)"
+		else
+			textbox.Text = "No remote selected to delete!"
+		end
+	end)
+	-------------------- ata -------------------------
+	local Players = game:GetService("Players")
+	local localPlayer = Players.LocalPlayer
+	
+	local function getRandomPlayer()
+		local allPlayers = {}
+		for _, player in pairs(Players:GetPlayers()) do
+			if player ~= localPlayer then
+				table.insert(allPlayers, player)
+			end
+		end
+		if #allPlayers > 0 then
+			local randomIndex = math.random(1, #allPlayers)
+			return allPlayers[randomIndex]
+		else
+			return nil
+		end
+	end
+	
+	local randomPlayer = getRandomPlayer()
+	local randomPlayerName
+	if randomPlayer then
+		randomPlayerName = randomPlayer.Name
+		print("Player Selected: " .. randomPlayerName)
+	else
+		randomPlayerName = nil
+		print()
+	end
+	------------------------------------------------------
+	
+	local P_1 = "Made by ._.kinzin"
+	local P_2 = "ALL"
+	local arg1 = nil
+	local arg2 = "yep"
+	
+		local function fireOnAllRemotes()
+			local obj = selectedRemote
+		local args = {
+			    randomPlayer
+				"Fired", 
+				nil, 
+				125793633964645, 
+				P_1,
+				P_2,
+				{P_1, P_2},
+				{arg2, arg1}
+			}
+	
+			if obj:IsA("RemoteFunction") then
+				local success, result = pcall(function()
+					return obj:InvokeServer(unpack(args))
+				end)
+	
+				if not success then
+					warn(result)
+				end
+			else
+				local success, errorMessage = pcall(function()
+					obj:FireServer(unpack(args))
+				end)
+	
+				if not success then
+					warn(errorMessage)
+				end
+			end
+		end
+	
+	ata.MouseButton1Click:Connect(function()
+		fireOnAllRemotes()
+	end)
+	
+	------------------------------------------------------------
+	
+	warn("{------------------------------}")
+	warn("{                              }")
+	warn("{      Made by ._.kinzin       }")
+	warn("{                              }")
+	warn("{------------------------------}")
+	
+	--[[
+	
+	██      ██   ██ ████████ ██  ██████  ██ ███    ██ ██  ██████  
+	██      ██   ██    ██    ██ ██      ███ ████   ██ ██ ██    ██ 
+	██      ███████    ██    ██ ██       ██ ██ ██  ██ ██ ██    ██ 
+	██           ██    ██    ██ ██       ██ ██  ██ ██ ██ ██    ██ 
+	███████      ██    ██    ██  ██████  ██ ██   ████ ██  ██████  
+	                                                            
+	
+	]]
+end;
+task.spawn(C_12);
+-- StarterGui.StellySpy.Frame.reziserMain
+local function C_16()
+local script = G2L["16"];
+	local main = script.Parent
+	local resizerModule = require(main:WaitForChild("resizerModule", 10))
+	
+	resizerModule.makeResizable(main)
+end;
+task.spawn(C_16);
+-- StarterGui.StellySpy.Frame.Remotes.Infoupdts.Animate
+local function C_1d()
+local script = G2L["1d"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_1d);
+-- StarterGui.StellySpy.Frame.Remotes.Infoupdts.Function
+local function C_1f()
+local script = G2L["1f"];
+	local a = script.Parent.Parent.Parent.CodeSample
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		a.Text = [[
+	-- Welcome to V3!	
+	-- Made by ._.kinzin on discord.
+	-- Huge thanks to deusferrinho for the UI.
+	-- Enjoy playing with remotes!
+	]]
+	end)
+end;
+task.spawn(C_1f);
+-- StarterGui.StellySpy.Frame.Remotes.Remote1.Animate
+local function C_23()
+local script = G2L["23"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_23);
+-- StarterGui.StellySpy.Frame.Remotes.Remote2.Animate
+local function C_28()
+local script = G2L["28"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_28);
+-- StarterGui.StellySpy.Frame.Remotes.Remote3.Animate
+local function C_2d()
+local script = G2L["2d"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_2d);
+-- StarterGui.StellySpy.Frame.Remotes.Remote4.Animate
+local function C_32()
+local script = G2L["32"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_32);
+-- StarterGui.StellySpy.Frame.Remotes.Remote5.Animate
+local function C_37()
+local script = G2L["37"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_37);
+-- StarterGui.StellySpy.Frame.Remotes.Remote6.Animate
+local function C_3c()
+local script = G2L["3c"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_3c);
+-- StarterGui.StellySpy.Frame.Remotes.Remote8.Animate
+local function C_41()
+local script = G2L["41"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_41);
+-- StarterGui.StellySpy.Frame.Remotes.Remote9.Animate
+local function C_46()
+local script = G2L["46"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_46);
+-- StarterGui.StellySpy.Frame.Remotes.Remote10.Animate
+local function C_4b()
+local script = G2L["4b"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_4b);
+-- StarterGui.StellySpy.Frame.Remotes.RemoteExample.Animate
+local function C_50()
+local script = G2L["50"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_50);
+-- StarterGui.StellySpy.Frame.Remotes.Remote7.Animate
+local function C_55()
+local script = G2L["55"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_55);
+-- StarterGui.StellySpy.Frame.Remotes.Remote11.Animate
+local function C_5a()
+local script = G2L["5a"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_5a);
+-- StarterGui.StellySpy.Frame.Buttons.Clear.Animate
+local function C_66()
+local script = G2L["66"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_66);
+-- StarterGui.StellySpy.Frame.Buttons.Clear.LocalScript
+local function C_67()
+local script = G2L["67"];
+	script.Parent.MouseButton1Click:Connect(function()
+	local remotesFolder = script.Parent.Parent.Parent.Remotes
+	
+	local function hideRemoteButtons()
+		for _, button in ipairs(remotesFolder:GetChildren()) do
+			if button:IsA("TextButton") and (button.Name:lower():find("remote")) then
+				button.Visible = false
+				button.Text = ""
+			end
+		end
+	end
+	
+	hideRemoteButtons()
+	end)
+end;
+task.spawn(C_67);
+-- StarterGui.StellySpy.Frame.Buttons.ClearL.Animate
+local function C_6e()
+local script = G2L["6e"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_6e);
+-- StarterGui.StellySpy.Frame.Buttons.CopyC.Animate
+local function C_75()
+local script = G2L["75"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+	
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+	
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+	
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+		
+		wait(2)
+		
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_75);
+-- StarterGui.StellySpy.Frame.Buttons.CopyC.LocalScript
+local function C_76()
+local script = G2L["76"];
+	local ab = script.Parent.Parent.Parent.CodeSample
+	local c = ab.Text
+	script.Parent.MouseButton1Click:Connect(function()
+		if setclipboard then
+			setclipboard(ab.Text)
+			ab.Text = "Copied to clipboard"
+		else
+			ab.Text = "Your executer doesn't support clipboard"
+		end
+	end)
+end;
+task.spawn(C_76);
+-- StarterGui.StellySpy.Frame.Buttons.CopyR.Animate
+local function C_7d()
+local script = G2L["7d"];
+	local tweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_7d);
+-- StarterGui.StellySpy.Frame.Buttons.ExL.Animate
+local function C_84()
+	local script = G2L["84"];
+	local tweenService = game:GetService("TweenService")
+
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_84);
+-- StarterGui.StellySpy.Frame.Buttons.Run.Animate
+local function C_8b()
+	local script = G2L["8b"];
+	local tweenService = game:GetService("TweenService")
+
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_8b);
+-- StarterGui.StellySpy.Frame.Buttons.RunS.Animate
+local function C_92()
+	local script = G2L["92"];
+	local tweenService = game:GetService("TweenService")
+
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_92);
+-- StarterGui.StellySpy.Frame.Buttons.RunS.LocalScript
+local function C_93()
+	local script = G2L["93"];
+	local ab = script.Parent.Parent.Parent.CodeSample
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local code = ab.Text
+
+		if code ~= "" then
+			local success, result = pcall(function()
+				local func = loadstring(code)
+				if func then
+					func()
+				end
+			end)
+
+			if not success then
+				print("King " .. result .. " HOLY SHIT")
+			end
+		else
+		end
+	end)
+end;
+task.spawn(C_93);
+-- StarterGui.StellySpy.Frame.Buttons.dc.Animate
+local function C_9a()
+	local script = G2L["9a"];
+	local tweenService = game:GetService("TweenService")
+
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_9a);
+-- StarterGui.StellySpy.Frame.Buttons.dc.LocalScript
+local function C_9b()
+	local script = G2L["9b"];
+	local ab = script.Parent.Parent.Parent.CodeSample
+	local c = "https://dsc.gg/cheater2k"
+	script.Parent.MouseButton1Click:Connect(function()
+		if setclipboard then
+			setclipboard(c)
+			ab.Text = "Copied to clipboard!"
+		else
+			ab.Text = "Your executer doesn't support clipboard"
+		end
+	end)
+end;
+task.spawn(C_9b);
+-- StarterGui.StellySpy.Frame.Buttons.yt.Animate
+local function C_a2()
+	local script = G2L["a2"];
+	local tweenService = game:GetService("TweenService")
+
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_a2);
+-- StarterGui.StellySpy.Frame.Buttons.yt.LocalScript
+local function C_a3()
+	local script = G2L["a3"];
+	local ab = script.Parent.Parent.Parent.CodeSample
+	local c = "https://www.youtube.com/@omaganameMag-7-K"
+	script.Parent.MouseButton1Click:Connect(function()
+		if setclipboard then
+			setclipboard(c)
+			ab.Text = "Copied to clipboard!"
+		else
+			ab.Text = "Your executer doesn't support clipboard"
+		end
+	end)
+end;
+task.spawn(C_a3);
+-- StarterGui.StellySpy.Frame.Buttons.FireALL.Function
+local function C_a9()
+	local script = G2L["a9"];
+	-------------------- ata -------------------------
+	local Players = game:GetService("Players")
+	local localPlayer = Players.LocalPlayer
+
+	local function getRandomPlayer()
+		local allPlayers = {}
+		for _, player in pairs(Players:GetPlayers()) do
+			if player ~= localPlayer then
+				table.insert(allPlayers, player)
+			end
+		end
+		if #allPlayers > 0 then
+			local randomIndex = math.random(1, #allPlayers)
+			return allPlayers[randomIndex]
+		else
+			return nil
+		end
+	end
+
+	local randomPlayer = getRandomPlayer()
+	local randomPlayerName
+	if randomPlayer then
+		randomPlayerName = randomPlayer.Name
+		print("Player Selected: " .. randomPlayerName)
+	else
+		randomPlayerName = nil
+		print()
+	end
+	------------------------------------------------------
+
+	local player = game.Players.LocalPlayer
+	local textService = game:GetService("TextService")
+	local P_1 = "ALL"
+	local P_2 = "Made by ._.kinzin"
+	local arg2 = "Message request"
+	local arg1 = "ALL"
+
+	local function fireOnAllRemoteEvents()
+		for _, obj in pairs(game:GetDescendants()) do
+			if obj:IsA("RemoteEvent") then
+				local args = {
+					randomPlayer
+					"Fired",
+					nil,
+					125793633964645,
+					P_1,
+					P_2,
+					{P_1, P_2},
+					{arg2, arg1}
+				}
+
+				local success, errorMessage = pcall(function()
+					obj:FireServer(unpack(args))
+				end)
+
+				if not success then
+					warn("Erro ao disparar o RemoteEvent: " .. errorMessage)
+				end
+
+				wait(1)
+			end
+		end
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		fireOnAllRemoteEvents()
+	end)
+
+	--[[
+	
+	██      ██   ██ ████████ ██  ██████  ██ ███    ██ ██  ██████  
+	██      ██   ██    ██    ██ ██      ███ ████   ██ ██ ██    ██ 
+	██      ███████    ██    ██ ██       ██ ██ ██  ██ ██ ██    ██ 
+	██           ██    ██    ██ ██       ██ ██  ██ ██ ██ ██    ██ 
+	███████      ██    ██    ██  ██████  ██ ██   ████ ██  ██████  
+	                                                            
+	]]
+end;
+task.spawn(C_a9);
+-- StarterGui.StellySpy.Frame.Buttons.FireALL.Animate
+local function C_ac()
+	local script = G2L["ac"];
+	local tweenService = game:GetService("TweenService")
+
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_ac);
+-- StarterGui.StellySpy.Frame.Buttons.ataR.Animate
+local function C_b3()
+	local script = G2L["b3"];
+	local tweenService = game:GetService("TweenService")
+
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_b3);
+-- StarterGui.StellySpy.Frame.Buttons.UpLogs.Animate
+local function C_ba()
+	local script = G2L["ba"];
+	local tweenService = game:GetService("TweenService")
+
+	local button = script.Parent
+	local border = button:WaitForChild("Border", 10)
+
+	local uistroke = button:FindFirstChildWhichIsA("UIStroke")
+
+	button.MouseEnter:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0}):Play()
+	end)
+
+	button.MouseLeave:Connect(function()
+		tweenService:Create(uistroke, TweenInfo.new(0.2, Enum.EasingStyle.Exponential), {Transparency = 0.5}):Play()
+	end)
+
+	button.MouseButton1Down:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(1, 0, 1, 0),
+		}):Play()
+
+		wait(2)
+
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+	button.MouseButton1Up:Connect(function()
+		tweenService:Create(border, TweenInfo.new(0.05, Enum.EasingStyle.Exponential), {
+			Size = UDim2.new(0.05, 0, 1, 0),
+		}):Play()
+	end)
+
+end;
+task.spawn(C_ba);
+-- StarterGui.StellySpy.Frame.Buttons.UpLogs.LocalScript
+local function C_bb()
+	local script = G2L["bb"];
+	local ab = script.Parent.Parent.Parent.CodeSample
+	script.Parent.MouseButton1Click:Connect(function()
+		ab.Text = [[Updates Logs:
+		
+	(06/01/25) 1.03:
+	Added a New button "Atack Remote" (He fires the remote no matter what. info: you can get kicked.")
+	Fixed a error in the "Fire all remotes".
+	]]
+	end)
+end;
+task.spawn(C_bb);
+-- StarterGui.StellySpy.Frame.CDrag
+local function C_bc()
+	local script = G2L["bc"];
+	-- Cell drag by ilikelimeclips2
+	local gui = script.Parent
+	local dragging = false
+	local dragInput, dragStart, startPos
+
+	local function updateDrag(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+
+	gui.InputBegan:Connect(function(input, gameProcessed)
+		if gameProcessed then return end
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			input.Changed:Connect(function()
+				if dragging then
+					updateDrag(input)
+				end
+			end)
+		end
+	end)
+
+	gui.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = false
+		end
+	end)
+
+end;
+task.spawn(C_bc);
+-- StarterGui.StellySpy.SetCore
+local function C_bd()
+	local script = G2L["bd"];
+	local screenGui = script.Parent
+	local CoreGui = game:GetService("CoreGui")
+
+	screenGui.Parent = CoreGui
+
+end;
+task.spawn(C_bd);
+-- StarterGui.StellySpy.Zindex
+local function C_be()
+	local script = G2L["be"];
+	local function setZIndexRecursive(object)
+		for _, child in pairs(object:GetChildren()) do
+			if child:IsA("GuiObject") then
+				child.ZIndex = 50
+			end
+			setZIndexRecursive(child)
+		end
+	end
+
+	setZIndexRecursive(script.Parent)
+
+end;
+task.spawn(C_be);
+
+return G2L["1"], require;
