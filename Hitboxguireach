@@ -1,0 +1,427 @@
+-- Create GUI in the player's screen
+local player = game.Players.LocalPlayer
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = player:WaitForChild("PlayerGui")
+
+-- Background Frame (with rounded edges)
+local background = Instance.new("Frame")
+background.Parent = screenGui
+background.Size = UDim2.new(0.5, 0, 0.6, 0)
+background.Position = UDim2.new(0.25, 0, 0.2, 0)
+background.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+background.Active = true
+background.Draggable = true -- Makes the GUI draggable
+
+-- Add rounded corners to background
+local backgroundCorner = Instance.new("UICorner")
+backgroundCorner.CornerRadius = UDim.new(0, 12)
+backgroundCorner.Parent = background
+
+-- Title Text (Stfo Hub)
+local title = Instance.new("TextLabel")
+title.Parent = background
+title.Size = UDim2.new(1, 0, 0.1, 0)
+title.Position = UDim2.new(0, 0, 0, 0)
+title.Text = "Stfo Hub"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1
+title.TextScaled = true
+title.Font = Enum.Font.GothamBold
+
+-- Close Button (X)
+local closeButton = Instance.new("TextButton")
+closeButton.Parent = background
+closeButton.Size = UDim2.new(0.1, 0, 0.1, 0)
+closeButton.Position = UDim2.new(0.9, 0, 0, 0)
+closeButton.Text = "X"
+closeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+closeButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+
+local closeButtonCorner = Instance.new("UICorner")
+closeButtonCorner.CornerRadius = UDim.new(0, 6)
+closeButtonCorner.Parent = closeButton
+
+-- Close Button Functionality
+closeButton.MouseButton1Click:Connect(function()
+    screenGui:Destroy()
+end)
+
+-- Add buttons for features
+local buttons = {
+    {Name = "Reach", Position = UDim2.new(0.1, 0, 0.2, 0)},
+    {Name = "Stronger Sword", Position = UDim2.new(0.1, 0, 0.35, 0)},
+    {Name = "Hitbox", Position = UDim2.new(0.1, 0, 0.5, 0)},
+    {Name = "Health Bar", Position = UDim2.new(0.1, 0, 0.65, 0)},
+}
+
+for _, buttonData in ipairs(buttons) do
+    local button = Instance.new("TextButton")
+    button.Parent = background
+    button.Size = UDim2.new(0.3, 0, 0.1, 0)
+    button.Position = buttonData.Position
+    button.Text = buttonData.Name
+    button.TextColor3 = Color3.fromRGB(255, 255, 255)
+    button.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+    button.Font = Enum.Font.Gotham
+    button.TextScaled = true
+
+    local buttonCorner = Instance.new("UICorner")
+    buttonCorner.CornerRadius = UDim.new(0, 6)
+    buttonCorner.Parent = button
+
+    -- Button-specific functionality
+    button.MouseButton1Click:Connect(function()
+        if buttonData.Name == "Reach" then
+            print("Reach enabled")
+            local active = true
+local trueActive = true
+local reachType = "Sphere"
+local dmgEnabled = true
+local visualizerEnabled = false
+
+local visualizer = Instance.new("Part")
+visualizer.BrickColor = BrickColor.Blue()
+visualizer.Transparency = 0.6
+visualizer.Anchored = true
+visualizer.CanCollide = false
+visualizer.Size = Vector3.new(0.5, 0.5, 0.5)
+visualizer.BottomSurface = Enum.SurfaceType.Smooth
+visualizer.TopSurface = Enum.SurfaceType.Smooth
+
+local plr = game.Players.LocalPlayer
+
+-- Handles damage logic
+local function onHit(hit, handle)
+    local victim = hit.Parent:FindFirstChildOfClass("Humanoid")
+    if victim and victim.Parent.Name ~= game.Players.LocalPlayer.Name then
+        if dmgEnabled then
+            victim:TakeDamage(999) -- Set damage to 999
+            for _, v in pairs(hit.Parent:GetChildren()) do
+                if v:IsA("Part") then
+                    firetouchinterest(v, handle, 0)
+                    firetouchinterest(v, handle, 1)
+                end
+            end
+        else
+            firetouchinterest(hit, handle, 0)
+            firetouchinterest(hit, handle, 1)
+        end
+    end
+end
+
+-- Gets the whitelist of character parts for all players except the local player
+local function getWhiteList()
+    local wl = {}
+    for _, v in pairs(game.Players:GetPlayers()) do
+        if v ~= plr then
+            local char = v.Character
+            if char then
+                for _, q in pairs(char:GetChildren()) do
+                    if q:IsA("Part") then
+                        table.insert(wl, q)
+                    end
+                end
+            end
+        end
+    end
+    return wl
+end
+
+-- Main script logic for reach
+game:GetService("RunService").RenderStepped:connect(function()
+    if not active or not trueActive then return end
+    local s = plr.Character and plr.Character:FindFirstChildOfClass("Tool")
+    if not s then visualizer.Parent = nil end
+    if s then
+        local handle = s:FindFirstChild("Handle") or s:FindFirstChildOfClass("Part")
+        if handle then
+            if visualizerEnabled then
+                visualizer.Parent = workspace
+            else
+                visualizer.Parent = nil
+            end
+            local reach = 999 -- Reach set to maximum value
+            if reachType == "Sphere" then
+                visualizer.Shape = Enum.PartType.Ball
+                visualizer.Material = Enum.Material.ForceField
+                visualizer.Transparency = 0
+                visualizer.Size = Vector3.new(reach, reach, reach)
+                visualizer.CFrame = handle.CFrame
+                for _, v in pairs(game.Players:GetPlayers()) do
+                    local hrp = v.Character and v.Character:FindFirstChild("HumanoidRootPart")
+                    if hrp and handle then
+                        local mag = (hrp.Position - handle.Position).magnitude
+                        if mag <= reach then
+                            onHit(hrp, handle)
+                        end
+                    end
+                end
+            elseif reachType == "Line" then
+                local origin = (handle.CFrame * CFrame.new(0, 0, -2)).p
+                local ray = Ray.new(origin, handle.CFrame.lookVector * -reach)
+                local p, pos = workspace:FindPartOnRayWithWhitelist(ray, getWhiteList())
+                visualizer.Shape = Enum.PartType.Block
+                visualizer.Size = Vector3.new(1, 0.8, reach)
+                visualizer.CFrame = handle.CFrame * CFrame.new(0, 0, (reach / 2) + 2)
+                if p then
+                    onHit(p, handle)
+                else
+                    for _, v in pairs(handle:GetTouchingParts()) do
+                        onHit(v, handle)
+                    end
+                end
+            end
+        end
+    end
+end)
+
+        elseif buttonData.Name == "Stronger Sword" then
+            print("Stronger Sword enabled")
+            loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Strong-sword-12117"))() 
+        elseif buttonData.Name == "Hitbox" then
+            print("Hitbox enabled")
+            local player = game.Players.LocalPlayer
+local runService = game:GetService("RunService")
+
+-- Customizable settings
+local hitboxTransparency = 0.5
+local hitboxColor = Color3.new(1, 0, 0) -- Red
+
+-- Function to create a visual hitbox
+local function createHitbox(part)
+    local hitbox = Instance.new("BoxHandleAdornment")
+    hitbox.Size = part.Size + Vector3.new(0.1, 0.1, 0.1) -- Slightly larger than the part
+    hitbox.Color3 = hitboxColor
+    hitbox.Transparency = hitboxTransparency
+    hitbox.AlwaysOnTop = true
+    hitbox.ZIndex = 1
+    hitbox.Adornee = part
+    hitbox.Parent = part
+end
+
+-- Function to visualize hitboxes for a player's character
+local function visualizeHitboxes(character)
+    for _, part in ipairs(character:GetChildren()) do
+        if part:IsA("BasePart") then
+            createHitbox(part)
+        end
+    end
+end
+
+-- Connect to existing players
+for _, plr in pairs(game.Players:GetPlayers()) do
+    if plr ~= player and plr.Character then
+        visualizeHitboxes(plr.Character)
+        plr.CharacterAdded:Connect(function(char)
+            visualizeHitboxes(char)
+        end)
+    end
+end
+
+-- Detect new players joining
+game.Players.PlayerAdded:Connect(function(plr)
+    if plr ~= player then
+        plr.CharacterAdded:Connect(function(char)
+            visualizeHitboxes(char)
+        end)
+    end
+end)
+
+-- Remove hitboxes if the local player disables them
+runService.RenderStepped:Connect(function()
+    for _, plr in pairs(game.Players:GetPlayers()) do
+        if plr ~= player and plr.Character then
+            for _, part in ipairs(plr.Character:GetChildren()) do
+                if part:IsA("BasePart") and not part:FindFirstChildOfClass("BoxHandleAdornment") then
+                    createHitbox(part)
+                end
+            end
+        end
+    end
+end)
+
+        elseif buttonData.Name == "Health Bar" then
+            print("Health Bar enabled")
+            local player = game.Players.LocalPlayer
+
+-- Function to create a health bar GUI
+local function createHealthBar(character)
+    local humanoid = character:FindFirstChildOfClass("Humanoid")
+    if not humanoid then return end
+
+    -- Billboard GUI
+    local billboardGui = Instance.new("BillboardGui")
+    billboardGui.Name = "HealthBar"
+    billboardGui.Adornee = character:FindFirstChild("HumanoidRootPart")
+    billboardGui.Size = UDim2.new(4, 0, 1, 0)
+    billboardGui.StudsOffset = Vector3.new(0, 3, 0)
+    billboardGui.AlwaysOnTop = true
+    billboardGui.Parent = character
+
+    -- Background frame
+    local bgFrame = Instance.new("Frame")
+    bgFrame.BackgroundColor3 = Color3.new(0, 0, 0)
+    bgFrame.Size = UDim2.new(1, 0, 0.2, 0)
+    bgFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+    bgFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+    bgFrame.BorderSizePixel = 0
+    bgFrame.Parent = billboardGui
+
+    -- Health bar frame
+    local healthFrame = Instance.new("Frame")
+    healthFrame.Name = "Health"
+    healthFrame.BackgroundColor3 = Color3.new(0, 1, 0)
+    healthFrame.Size = UDim2.new(1, 0, 1, 0)
+    healthFrame.BorderSizePixel = 0
+    healthFrame.Parent = bgFrame
+
+    -- Update health bar
+    humanoid.HealthChanged:Connect(function(health)
+        healthFrame.Size = UDim2.new(health / humanoid.MaxHealth, 0, 1, 0)
+        if health / humanoid.MaxHealth > 0.5 then
+            healthFrame.BackgroundColor3 = Color3.new(0, 1, 0) -- Green
+        elseif health / humanoid.MaxHealth > 0.2 then
+            healthFrame.BackgroundColor3 = Color3.new(1, 1, 0) -- Yellow
+        else
+            healthFrame.BackgroundColor3 = Color3.new(1, 0, 0) -- Red
+        end
+    end)
+
+    -- Remove health bar if the character dies
+    humanoid.Died:Connect(function()
+        billboardGui:Destroy()
+    end)
+end
+
+-- Connect to existing players
+for _, plr in pairs(game.Players:GetPlayers()) do
+    if plr ~= player and plr.Character then
+        createHealthBar(plr.Character)
+        plr.CharacterAdded:Connect(function(character)
+            createHealthBar(character)
+        end)
+    end
+end
+
+-- Detect new players joining
+game.Players.PlayerAdded:Connect(function(plr)
+    if plr ~= player then
+        plr.CharacterAdded:Connect(function(character)
+            createHealthBar(character)
+        end)
+    end
+end)
+
+        end
+    end)
+end
+
+-- Slider Frame
+local sliderFrame = Instance.new("Frame")
+sliderFrame.Parent = background
+sliderFrame.Size = UDim2.new(0.8, 0, 0.1, 0)
+sliderFrame.Position = UDim2.new(0.1, 0, 0.8, 0)
+sliderFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+
+local sliderFrameCorner = Instance.new("UICorner")
+sliderFrameCorner.CornerRadius = UDim.new(0, 8)
+sliderFrameCorner.Parent = sliderFrame
+
+-- Slider Button
+local sliderButton = Instance.new("TextButton")
+sliderButton.Parent = sliderFrame
+sliderButton.Size = UDim2.new(0.1, 0, 1, 0)
+sliderButton.Position = UDim2.new(0, 0, 0, 0)
+sliderButton.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+sliderButton.Text = ""
+sliderButton.AutoButtonColor = false
+
+local sliderButtonCorner = Instance.new("UICorner")
+sliderButtonCorner.CornerRadius = UDim.new(0, 8)
+sliderButtonCorner.Parent = sliderButton
+
+-- Slider Functionality (Mouse + Touch Support)
+local maxDistance = 130 -- Maximum distance
+local sliderValue = 0.1 -- Initial value
+local dragging = false
+
+sliderButton.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        dragging = true
+    end
+end)
+
+sliderButton.InputEnded:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        dragging = false
+    end
+end)
+
+sliderFrame.InputChanged:Connect(function(input)
+    if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+        local relativePos = (input.Position.X - sliderFrame.AbsolutePosition.X) / sliderFrame.AbsoluteSize.X
+        relativePos = math.clamp(relativePos, 0, 1)
+        sliderButton.Position = UDim2.new(relativePos, 0, 0, 0)
+        sliderValue = relativePos * maxDistance
+    end
+end)
+
+-- Toggle Button
+local toggleButton = Instance.new("TextButton")
+toggleButton.Parent = sliderFrame
+toggleButton.Size = UDim2.new(0.2, 0, 1, 0)
+toggleButton.Position = UDim2.new(0.8, 0, 0, 0)
+toggleButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- Red when off
+toggleButton.Text = "OFF"
+toggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+toggleButton.TextScaled = true
+
+local toggleButtonCorner = Instance.new("UICorner")
+toggleButtonCorner.CornerRadius = UDim.new(0, 8)
+toggleButtonCorner.Parent = toggleButton
+
+-- Toggle Functionality
+local toggleActive = false
+toggleButton.MouseButton1Click:Connect(function()
+    toggleActive = not toggleActive
+    if toggleActive then
+        toggleButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- Green when active
+        toggleButton.Text = "ON"
+    else
+        toggleButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- Red when off
+        toggleButton.Text = "OFF"
+    end
+end)
+
+-- Teleportation Logic
+game:GetService("RunService").RenderStepped:Connect(function()
+    if toggleActive then
+        local nearestPlayer = nil
+        local nearestDistance = sliderValue
+        local localCharacter = player.Character or player.CharacterAdded:Wait()
+        local localPosition = localCharacter.PrimaryPart.Position
+
+        for _, otherPlayer in pairs(game.Players:GetPlayers()) do
+            if otherPlayer ~= player and otherPlayer.Character then
+                local distance = (otherPlayer.Character.PrimaryPart.Position - localPosition).Magnitude
+                if distance <= nearestDistance and (not nearestPlayer or distance < nearestDistance) then
+                    nearestPlayer = otherPlayer
+                end
+            end
+        end
+
+        if nearestPlayer and nearestPlayer.Character then
+            localCharacter:SetPrimaryPartCFrame(nearestPlayer.Character.PrimaryPart.CFrame * CFrame.new(0, 0, -2)) -- Offset behind
+        end
+    end
+end)
+
+local tpKillText = Instance.new("TextLabel")
+tpKillText.Parent = sliderFrame
+tpKillText.Size = UDim2.new(0.3, 0, 0.5, 0)
+tpKillText.Position = UDim2.new(0.1, 0, 1, -30)
+tpKillText.BackgroundTransparency = 1
+tpKillText.Text = "Tp Kill"
+tpKillText.TextColor3 = Color3.new(1, 1, 1)
+tpKillText.Font = Enum.Font.GothamBold
+tpKillText.TextScaled = true
